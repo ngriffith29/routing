@@ -32,7 +32,7 @@ class Page1 extends Component {
                   <div className="card" key={movie.id}>
                   <div className="card-body">
                     <h5 className="card-title">{movie.title}</h5>
-                    <Link to={`/films/${movie}`}><button>Load Film info</button></Link>
+                    <Link to={`/films/${movie.id}`}><button>Load Film info</button></Link>
                   </div>
                 </div>
                  ))}

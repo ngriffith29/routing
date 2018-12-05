@@ -6,15 +6,12 @@ class Page2  extends Component {
         super(props)
     }
     componentDidMount(){
-        console.log(this.props.match)
+        console.log(this.props.match.params.id)
     }
 
 render(){
     return(
-        <div>
-        <div>ID{this.props.match.params.id}</div>
-        <div></div>
-        </div>
+        <div>{this.props.match.params.id}</div>
     )
 }
 }
